@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <h1>ПРОВЕРКА НАРУШЕНИЙ</h1>
+</header>
+<div class="container">
+    <h2>Загрузка файлов</h2>
+    <div class="alert">
+        <h5>Максимальный размер файла не должен превышать 10МБ</h5>
+    </div>
+    <input type="file" id="fileInput" accept="image/jpeg, image/jpg, image/png"/>
+    <button id="uploadButton" class="button">Загрузить</button>
+    <p id="message"></p>
+</div>
+<script src="script.js"></script>
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modalMessage"></p>
+  </div>
+</div>
+<div id="errorToast" class="toast">
+    <div class="toast-content">
+        <span id="errorMessage"></span>
+    </div>
+</div>
+<div id="loader" class="loader hidden">
+    <div class="loader-content">
+        <div class="spinner"></div>
+        <span id="loaderMessage">Пожалуйста, подождите, операция может занять несколько минут</span>
+    </div>
+</div>
+
+</body>
+</html>
